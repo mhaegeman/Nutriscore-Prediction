@@ -1,0 +1,47 @@
+# ─── Data ────────────────────────────────────────────────────────────────────
+# Raw and processed data files are not tracked (large / downloadable on demand)
+data/*.csv
+data/*.tsv
+data/*.parquet
+data/*.json
+!data/.gitkeep
+
+# ─── Generated outputs ────────────────────────────────────────────────────────
+figures/*
+!figures/.gitkeep
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+MANIFEST
+
+# ─── Virtual environments ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ─── Notebooks ────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ─── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ─── Testing & coverage ───────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
